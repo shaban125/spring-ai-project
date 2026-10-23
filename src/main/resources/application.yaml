@@ -4,9 +4,13 @@ spring:
   ai:
     ollama:
       base-url: http://localhost:11434
-      chat:
-        options:
-          model: codellama:latest
-          temperature: 0.7
+#      chat:
+#       options:
+#          model: codellama:latest
+#          temperature: 0.7
+#          max-token: 200
+logging:
+  level:
+    org.springframework.ai.chat.client.advisor: DEBUG
 server:
   port: 8081

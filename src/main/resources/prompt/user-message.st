@@ -1,1 +1,1 @@
-Explain coding concept:{concept}
+Explain concept:{concept}

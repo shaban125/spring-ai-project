@@ -26,15 +26,15 @@ public class ChatController {
         this.chatService = chatService;
     }
 
-    @GetMapping("/chat")
-    public ResponseEntity<String> chat(@RequestParam(value = "q") String q){
-        return ResponseEntity.ok(chatService.chatTemplate(q));
-    }
+//    @GetMapping("/chat")
+//    public ResponseEntity<String> chat(@RequestParam(value = "q") String q){
+//        return ResponseEntity.ok(chatService.chatTemplate(q));
+//    }
 
 
     @GetMapping("/stream-chat")
-    public ResponseEntity<Flux<String>> streamChat(@RequestParam("q") String query){
-        return ResponseEntity.ok(this.chatService.streamChat(query));
+    public ResponseEntity<Flux<String>> streamChat(@RequestParam("q") String query,@RequestParam(defaultValue = "default") String conversationId){
+        return ResponseEntity.ok(this.chatService.streamChat(query, conversationId));
     }
 
 }

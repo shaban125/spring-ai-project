@@ -8,11 +8,10 @@
 		<version>4.0.8</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.spring.ollama</groupId>
-	<artifactId>spring-ai-ollama</artifactId>
+	<groupId>com.spring.ai.firstproject</groupId>
+	<artifactId>memory_app</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name/>
-	<description/>
+	<name>memory_app</name>
 	<url/>
 	<licenses>
 		<license/>
@@ -39,7 +38,6 @@
 			<groupId>org.springframework.ai</groupId>
 			<artifactId>spring-ai-starter-model-ollama</artifactId>
 		</dependency>
-
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
